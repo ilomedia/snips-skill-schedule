@@ -35,7 +35,7 @@ def action_wrapper(hermes, intent_message, conf):
 
     sentence = "ce matin, promenade au marché et a 17 heure cours de pilate sur la plage"
 
-    hermes.publish_end_session(intent_message.session_id, sentence.decode("latin-1"))
+    hermes.publish_end_session(intent_message.session_id, sentence)
 
 
 if __name__ == "__main__":
