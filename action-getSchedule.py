@@ -33,7 +33,7 @@ def subscribe_intent_callback(hermes, intent_message):
 
 def action_wrapper(hermes, intent_message, conf):
 
-    sentence = "ce matin, promenade au marché et a 17 heure cours de pilate sur la plage"
+    sentence = "ce matin, promenade au marché et a 17 heure, cours de pilate sur la plage"
 
     hermes.publish_end_session(intent_message.session_id, sentence)
 
